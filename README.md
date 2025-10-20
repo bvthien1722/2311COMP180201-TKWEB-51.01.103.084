@@ -34,8 +34,8 @@
 - **Mô tả:** Trang web chủ đề Halloween với hiệu ứng và màu sắc đặc trưng.
 - **Link demo:** [github.tbgroup.run.place/Bai_Tap_6.1.2](https://github.tbgroup.run.place/Bai_Tap_6.1.2/)
 ### Bài tập 6.1.3: Trang CV cá nhân
-- **Mã sinh viên:** 2311COMP180201-TKWEB-51.01.103.084
-
+- **Mã sinh viên:** 51.01.103.084
+- **Link demo:** [github.tbgroup.run.place/Bai_Tap_6.1.3](https://github.tbgroup.run.place/Bai_Tap_6.1.3/)
 ---
 
 ## 📁 Thông tin chung
