@@ -8,9 +8,9 @@
 </head>
 <body>
     <select id="bgSelect" onchange="changeBackground(this.value)">
-        <option value="img/background1.png">Biển Sáng</option>
-        <option value="img/background2.png">Đại Dương</option>
-        <option value="img/background3.png">Rạn San Hô</option>
+        <option value="img/background1.jpg">Biển Sáng</option>
+        <option value="img/background2.jpg">Đại Dương</option>
+        <option value="img/background3.jpg">Rạn San Hô</option>
     </select>
     <script>
     function changeBackground(path) {
@@ -24,7 +24,7 @@
         document.body.style.backgroundImage = `url('${saved}')`;
         document.getElementById("bgSelect").value = saved;
       } else {
-        document.body.style.backgroundImage = "url('img/background1.png')";
+        document.body.style.backgroundImage = "url('img/background1.jpg')"; // Mặc định
       }
     };
   </script>
