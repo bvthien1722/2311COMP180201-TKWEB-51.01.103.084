@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(242, 188, 11);
+    color: orange;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Ảnh ngôi nhà */
+.home-image {
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+}
+
+/* Bí ngô ở góc trái */
+.pumpkin-image {
+    width: 180px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Dơi ở trên góc phải — có hiệu ứng bay nhẹ */
+.bat-image {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    z-index: 1000;
+    animation: fly 3s ease-in-out infinite alternate;
+}
+
+@keyframes fly {
+    from { transform: translateY(0) rotate(-5deg); }
+    to { transform: translateY(20px) rotate(5deg); }
+}
+
+/* Mèo ở góc phải dưới */
+.cat-image {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 120px;
+    z-index: 800;
+}
+
+/* Xác ướp ở góc phải thấp hơn */
+.mummy-image {
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+    width: 140px;
+    z-index: 900;
+}
+
+/* Ngọn nến ở góc trái trên */
+.candle-image {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 90px;
+    z-index: 900;
+    animation: flicker 1.5s infinite ease-in-out;
+}
+
+/* Hiệu ứng chập chờn ánh nến */
+@keyframes flicker {
+    0%, 100% { opacity: 0.9; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+}
