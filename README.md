@@ -41,4 +41,4 @@
 ## 📁 Thông tin chung
 - **Ngôn ngữ sử dụng:** HTML, CSS, JavaScript, Bootstrap  
 - **Công cụ:** Visual Studio Code, GitHub Pages  
-- **Tác giả:** *[Tên của bạn]*  
+- **Tác giả:** *Bùi Vạn Thiên*  
