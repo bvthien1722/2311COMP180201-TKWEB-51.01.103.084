@@ -7,7 +7,7 @@
   - Kế hoạch học tập  
   - Sở thích  
   - Form liên hệ/góp ý  
-- **Link demo:** [github.tbgroup.run.place/Bai_tap_1.6_chuong_1](http://github.tbgroup.run.place/Bai_tap_1.6_chuong_1/)
+- **Link demo:** [github.tbgroup.run.place/Bai_tap_1.6](http://github.tbgroup.run.place/Bai_tap_1.6/)
 
 ---
 
