@@ -6,8 +6,11 @@ body {
 header {
   background-color: #333;
   color: white;
-  padding: 15px 0;
   text-align: center;
+  left: 0;
+  width: 100%;
+  top: 0;
+  padding: 10px 0;
 }
 
 header h1 {
@@ -49,15 +52,13 @@ img{
   font-size: 30px;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100px;
-  background: #333;
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .btn {
