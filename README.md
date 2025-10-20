@@ -14,7 +14,7 @@
 ## 🛍️ Chương 3
 ### Bài tập 3.3: Quản lý sản phẩm
 - **Mô tả:** Xây dựng trang web quản lý sản phẩm (thêm, sửa, xóa, tìm kiếm, hiển thị danh sách...).
-
+- **Link demo:** [github.tbgroup.run.place/Bai_Tap_3.3](https://github.tbgroup.run.place/Bai_Tap_3.3/)
 ---
 
 ## 💻 Chương 5
