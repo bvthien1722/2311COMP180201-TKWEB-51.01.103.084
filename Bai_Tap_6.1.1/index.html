@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<script>
+    function setcolor(x){
+        switch(x){
+            case 1:
+                document.body.style.backgroundImage = "url('img/background1.png')";
+                break;
+            case 2:
+                document.body.style.backgroundImage = "url('img/background2.png')";
+                break;
+            case 3:
+                document.body.style.backgroundImage = "url('img/background3.png')";
+                break;
+        }
+    }
+</script>
+<body>
+    <select id="background">
+        <option value="img/background1.png" onclick="setcolor(1)">Biển</option>
+        <option value="img/background2.png" onclick="setcolor(2)">Đại dương</option>
+        <option value="img/background3.png" onclick="setcolor(3)">Rạn san hô</option>
+    </select>
+    <div class="btn">
+        <div class="sea"></div>
+        <div class="mauxanhbien"></div>
+        <div class="trang"></div>
+    </div>
+    </div>
+    <div id="content">
+        <div id="shark"><img src="img/shark.png" alt="Shark"></div>
+        <div id="diver1"><img src="img/diver1.png" alt="Diver 1"></div>
+        <div id="diver2"><img src="img/diver2.png" alt="Diver 2"></div>
+        <div id="diver3"><img src="img/diver3.png" alt="Diver 3"></div>
+        <div id="faintSchool"><img src="img/faintSchool.png" alt="Faint School"></div>
+        <div id="goldFishSchool"><img src="img/goldFishSchool.png" alt="goldFishSchool"></div>
+        <div id="turtle"><img src="img/turtle.png" alt="Turtle"></div>
+    </div>
+</body>
+</html>

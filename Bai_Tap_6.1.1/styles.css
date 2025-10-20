@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('img/underwater.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#shark {
+    left: 100px;
+    top: 50px;
+    position: absolute;
+    animation: Shark 10s linear infinite running;
+}
+
+@keyframes Shark {
+  0% {left: 100px; top: 400px; transform: rotateY(0deg) rotateX(0deg);}
+  20% {left: 350px; top: 380px;}
+  40% {left: 600px; top: 420px;}
+  50% {left: 750px; top: 200px; transform: rotateY(0deg) rotateX(10deg);}
+  60% {left: 700px; top: 100px; transform: rotateY(-180deg) rotateX(0deg);}
+  80% {left: 400px; top: 200px; transform: rotateY(-180deg) rotateX(5deg);}
+  100% {left: 100px; top: 400px; transform: rotateY(0deg) rotateX(0deg);}
+}
+
+#diver1 {
+    left: 100px;
+    top: 50px;
+    position: absolute;
+    animation: diver1 14s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#diver2 {
+    left: 200px;
+    top: 100px;
+    position: absolute;
+    animation: diver2 16s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#diver3 {
+    left: 300px;
+    top: 150px;
+    position: absolute;
+    animation: diver3 18s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes diver1 {
+  0%   { left: 100px; top: 600px; transform: rotateY(0deg); }
+  20%  { left: 400px; top: 580px; }
+  40%  { left: 750px; top: 600px; }
+  50%  { left: 850px; top: 350px; transform: rotateY(0deg) rotateX(10deg); }
+  60%  { left: 800px; top: 250px; transform: rotateY(-180deg); }
+  80%  { left: 400px; top: 350px; transform: rotateY(-180deg) rotateX(5deg); }
+  100% { left: 100px; top: 600px; transform: rotateY(0deg); }
+}
+
+@keyframes diver2 {
+  0%   { left: 200px; top: 400px; transform: rotateY(0deg); }
+  20%  { left: 500px; top: 380px; }
+  40%  { left: 800px; top: 400px; }
+  50%  { left: 900px; top: 200px; transform: rotateY(0deg) rotateX(8deg); }
+  60%  { left: 850px; top: 150px; transform: rotateY(-180deg); }
+  80%  { left: 500px; top: 250px; transform: rotateY(-180deg) rotateX(3deg); }
+  100% { left: 200px; top: 400px; transform: rotateY(0deg); }
+}
+
+@keyframes diver3 {
+  0%   { left: 300px; top: 250px; transform: rotateY(0deg); }
+  20%  { left: 600px; top: 230px; }
+  40%  { left: 900px; top: 250px; }
+  50%  { left: 1000px; top: 80px; transform: rotateY(0deg) rotateX(10deg); }
+  60%  { left: 950px; top: 60px; transform: rotateY(-180deg); }
+  80%  { left: 600px; top: 150px; transform: rotateY(-180deg) rotateX(5deg); }
+  100% { left: 300px; top: 250px; transform: rotateY(0deg); }
+}
+
+#faintSchool {
+    left: 50px;
+    top: 500px;
+    position: absolute;
+    animation: faintSchool 20s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes faintSchool {
+    0%   { left: 50px; top: 500px;}
+    20%  { left: 200px; top: 480px; }
+    40%  { left: 400px; top: 520px; }
+    50%  { left: 450px; top: 200px;}
+    60%  { left: 400px; top: 100px;}
+    80%  { left: 200px; top: 200px;}
+    100% { left: 50px; top: 500px;}
+}
+
+#goldFishSchool {
+    left: 150px;
+    top: 600px;
+    position: absolute;
+    animation: goldFishSchool 25s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes goldFishSchool {
+    0%   { left: 150px; top: 600px; transform: rotateY(0deg); }
+    20%  { left: 300px; top: 580px; }
+    40%  { left: 500px; top: 600px; }
+    50%  { left: 600px; top: 350px; transform: rotateY(0deg) rotateX(10deg); }
+    60%  { left: 550px; top: 250px; transform: rotateY(-180deg); }
+    80%  { left: 300px; top: 350px; transform: rotateY(-180deg) rotateX(5deg); }
+    100% { left: 150px; top: 600px; transform: rotateY(0deg); }
+}
+
+#turtle {
+    left: 400px;
+    top: 700px;
+    position: absolute;
+    animation: turtle 30s linear infinite running;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes turtle {
+    0%   { left: 400px; top: 700px; transform: rotateY(0deg); }
+    20%  { left: 600px; top: 680px; }
+    40%  { left: 800px; top: 700px; }
+    50%  { left: 900px; top: 500px; transform: rotateY(0deg) rotateX(10deg); }
+    60%  { left: 850px; top: 400px; transform: rotateY(-180deg); }
+    80%  { left: 600px; top: 500px; transform: rotateY(-180deg) rotateX(5deg); }
+    100% { left: 400px; top: 700px; transform: rotateY(0deg); }
+}
+.background {
+    width: 500px;
+    margin: 0 auto;
+}
+.mautrang{
+    width: 30px;
+}
