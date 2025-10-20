@@ -13,22 +13,25 @@
         <option value="img/background3.jpg">🐢 Rạn San Hô</option>
     </select>
     <script>
-    function changeBackground(path) {
-      document.body.style.backgroundImage = `url('${path}')`;
-      localStorage.setItem("savedBackground", path);
-    }
+        function changeBackground(path) {
+        document.body.style.backgroundImage = `url('${path}')`;
+        localStorage.setItem("savedBackground", path);
+        }
 
-    window.onload = function() {
-      const saved = localStorage.getItem("savedBackground");
-      if (saved) {
-        document.body.style.backgroundImage = `url('${saved}')`;
-        document.getElementById("bgSelect").value = saved;
-      } else {
-        document.body.style.backgroundImage = "url('img/background1.jpg')"; // Mặc định
-      }
-    };
-  </script>
-
+        window.onload = function() {
+        const saved = localStorage.getItem("savedBackground");
+        if (saved) {
+            document.body.style.backgroundImage = `url('${saved}')`;
+            document.getElementById("bgSelect").value = saved;
+        } else {
+            document.body.style.backgroundImage = "url('img/background1.jpg')"; // Mặc định
+        }
+        };
+    </script>
+    <audio controls>
+    <source src="song-bien.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     <div class="btn">
         <div class="sea"></div>
         <div class="mauxanhbien"></div>
