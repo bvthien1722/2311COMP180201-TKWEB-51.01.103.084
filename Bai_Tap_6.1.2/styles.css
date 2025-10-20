@@ -71,3 +71,14 @@ body {
     0%, 100% { opacity: 0.9; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.05); }
 }
+
+@font-face {
+  font-family: halloween; /* set name */
+  src: url(Zombie_Hunger.otf); /* url of the font */
+}
+h1 {
+    font-family: halloween;
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
