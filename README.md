@@ -29,7 +29,7 @@
 ## 🎨 Chương 6
 ### Bài tập 6.1.1: Hồ cá vui nhộn (dùng CSS3)
 - **Mô tả:** Tạo hiệu ứng hoạt hình hồ cá bằng CSS3.
--**Link demo:** [github.tbgroup.run.place/Bai_Tap_6.1.1](https://github.tbgroup.run.place/Bai_Tap_6.1.1/)
+- **Link demo:** [github.tbgroup.run.place/Bai_Tap_6.1.1](https://github.tbgroup.run.place/Bai_Tap_6.1.1/)
 ### Bài tập 6.1.2: Thiết kế trang Halloween
 - **Mô tả:** Trang web chủ đề Halloween với hiệu ứng và màu sắc đặc trưng.
 
