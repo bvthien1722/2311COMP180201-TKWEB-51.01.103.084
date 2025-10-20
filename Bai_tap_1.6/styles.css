@@ -49,11 +49,16 @@ img{
   font-size: 30px;
 }
 footer {
-  text-align: center;
-  padding: 3px;
-  background-color: #3a3939;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
   color: white;
+  text-align: center;
+  padding: 10px 0;
 }
+
 .btn {
   background-color: #4CAF50; /* Green */
   border: none;
