@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Hồ Cá Vui Nhộn</title>
 </head>
-<script>
-    function setcolor(x){
-        switch(x){
-            case 1:
-                document.body.style.backgroundImage = "url('img/background1.png')";
-                break;
-            case 2:
-                document.body.style.backgroundImage = "url('img/background2.png')";
-                break;
-            case 3:
-                document.body.style.backgroundImage = "url('img/background3.png')";
-                break;
-        }
-    }
-</script>
 <body>
-    <select id="background">
-        <option value="img/background1.png" onclick="setcolor(1)">Biển</option>
-        <option value="img/background2.png" onclick="setcolor(2)">Đại dương</option>
-        <option value="img/background3.png" onclick="setcolor(3)">Rạn san hô</option>
+    <select id="bgSelect" onchange="changeBackground(this.value)">
+        <option value="img/background1.png">Biển Sáng</option>
+        <option value="img/background2.png">Đại Dương</option>
+        <option value="img/background3.png">Rạn San Hô</option>
     </select>
+    <script>
+    function changeBackground(path) {
+      document.body.style.backgroundImage = `url('${path}')`;
+      localStorage.setItem("savedBackground", path);
+    }
+
+    window.onload = function() {
+      const saved = localStorage.getItem("savedBackground");
+      if (saved) {
+        document.body.style.backgroundImage = `url('${saved}')`;
+        document.getElementById("bgSelect").value = saved;
+      } else {
+        document.body.style.backgroundImage = "url('img/background/background1.png')";
+      }
+    };
+  </script>
+
     <div class="btn">
         <div class="sea"></div>
         <div class="mauxanhbien"></div>
