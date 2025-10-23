@@ -1,21 +1,133 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/Sea Monster.ico">
-    <title>Halloween</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halloween Festival – TBGroup</title>
+  <link rel="icon" href="./img/Pumpkin.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="main-content">
-        <h1>Halloween</h1>
-        <img src="./img/Iconcreme-Halloween-Home.512.png" alt="Ngôi nhà Halloween" class="home-image">
+
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">🎃 Halloween Festival</h1>
+      <nav class="main-nav">
+        <a href="#history">Lịch Sử</a>
+        <a href="#shop">Gian Hàng</a>
+        <a href="#gallery">Thư Viện</a>
+        <a href="#contact">Liên Hệ</a>
+        <a href="dangky.html">Đăng Ký</a>
+      </nav>
     </div>
-    <img src="./img/Iconcreme-Halloween-Twitter.512.png" alt="Ngọn nến" class="candle-image">
-    <img src="./img/Iconcreme-Halloween-Pumpkin.512.png" alt="Bí ngô" class="pumpkin-image">
-    <img src="./img/Iconcreme-Halloween-Bat.512.png" alt="Dơi" class="bat-image">
-    <img src="./img/Iconcreme-Halloween-Cat.512.png" alt="Mèo" class="cat-image">
-    <img src="./img/Iconcreme-Halloween-Mummy.512.png" alt="Xác ướp" class="mummy-image">
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h2>Halloween</h2>
+          <p>Chào mừng đến với lễ hội Halloween — nơi bạn có thể khám phá gian hàng, thưởng thức hoạt động và tham gia hóa trang.</p>
+          <a class="btn" href="dangky.html">Đăng ký ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="history" class="section wrap card">
+      <h2>Lịch sử & Nguồn gốc Halloween</h2>
+      <p class="lead">Halloween xuất phát từ lễ Samhain của người Celt cổ đại, là thời điểm giữa mùa thu và đông — khi người ta tin rằng linh hồn có thể trở lại trần gian.</p>
+      <div class="two-col">
+        <div>
+          <h3>Truyền thống</h3>
+          <ul>
+            <li>Hóa trang, khắc bí ngô</li>
+            <li>Trick-or-treat (xin kẹo)</li>
+            <li>Thắp nến, kể chuyện ma</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hoạt động lễ hội</h3>
+          <ul>
+            <li>Gian hàng sản phẩm & trò chơi</li>
+            <li>Cuộc thi hóa trang</li>
+            <li>Âm nhạc & ẩm thực</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="section wrap">
+      <h2>Gian hàng sản phẩm</h2>
+      <div class="card shop-grid">
+        <div class="shop-form">
+          <h3>Thêm / Sửa sản phẩm</h3>
+          <form id="productForm">
+            <input type="hidden" id="productId" />
+            <label>Tên sản phẩm
+              <input type="text" id="productName" required />
+            </label>
+            <label>Giá (₫)
+              <input type="number" id="productPrice" required min="0" />
+            </label>
+            <label>Mô tả
+              <input type="text" id="productDesc" />
+            </label>
+            <div class="form-actions">
+              <button class="btn" type="submit">Lưu</button>
+              <button class="btn alt" type="button" id="resetBtn">Làm mới</button>
+            </div>
+          </form>
+        </div>
+        <div class="shop-list">
+          <h3>Danh sách sản phẩm</h3>
+          <input id="searchInput" placeholder="Tìm kiếm..." />
+          <div id="products" class="products-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section wrap card">
+      <h2>Bộ sưu tập hình ảnh</h2>
+      <p class="lead">Khoảnh khắc vui nhộn và đáng sợ của lễ hội 🎭</p>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/seed/h1/600/400" alt="">
+        <img src="https://picsum.photos/seed/h2/600/400" alt="">
+        <img src="https://picsum.photos/seed/h3/600/400" alt="">
+        <img src="https://picsum.photos/seed/h4/600/400" alt="">
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap card">
+      <h2>Liên hệ</h2>
+      <form id="contactForm">
+        <label>Họ và tên
+          <input type="text" id="cName" required>
+        </label>
+        <label>Email
+          <input type="email" id="cEmail" required>
+        </label>
+        <label>Nội dung
+          <textarea id="cMessage" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Gửi</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 TBGroup – Halloween Festival</p>
+      <p><a href="dangky.html">Đăng ký tham gia lễ hội</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Đăng ký tham gia lễ hội – Halloween Festival</title>
+  <link rel="icon" href="./img/Pumpkin.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">🎃 Halloween Festival</h1>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="index.html#shop">Gian hàng</a>
+        <a href="index.html#gallery">Thư viện</a>
+        <a href="index.html#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section card">
+    <h2>Đăng ký tham gia lễ hội Halloween</h2>
+    <p class="lead">Vui lòng điền thông tin dưới đây để tham gia sự kiện ma quái của chúng tôi!</p>
+
+    <form id="regForm">
+      <label>Họ và tên
+        <input type="text" id="rName" required />
+      </label>
+      <label>Số điện thoại
+        <input type="text" id="rPhone" required />
+      </label>
+      <label>Số người tham gia
+        <input type="number" id="rCount" min="1" value="1" required />
+      </label>
+      <label>Ghi chú
+        <textarea id="rNote" rows="3"></textarea>
+      </label>
+      <div class="form-actions">
+        <button class="btn" type="submit">Đăng ký</button>
+        <button class="btn alt" type="button" id="clearRegs">Xóa tất cả đăng ký</button>
+      </div>
+    </form>
+
+    <h3>Danh sách đăng ký</h3>
+    <div id="regList" class="regs"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 TBGroup – Halloween Festival</p>
+      <a href="index.html">← Quay lại trang chủ</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
